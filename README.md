@@ -2,7 +2,7 @@
 This foreach-series support for es6 generator function.
 
 ## Install
-npm install co-foreachseries --save
+npm install co-foreach-series --save
 
 
 ## Example
