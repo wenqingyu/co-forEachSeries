@@ -5,6 +5,8 @@ co-foreach-series allows you to traverse array elements and process with async t
 
 However, if you want to go through array element and process async tasks them paralelly with generator, you should take a look of https://github.com/ivpusic/co-foreach.
 
+In this package, we used recursive way to implement loop logic.
+
 ## Install
 ``` npm install co-foreach-series --save ```
 
@@ -22,7 +24,7 @@ const request = require("es6-request");
 
 let urls = ['https://github.com/wenqingyu', 'https://github.com/wenqingyu', 'https://github.com/wenqingyu'];
      // array      // element, index
-forEach(urls, function(url,    i) { //
+forEach(urls, function(url,    i) {
   return co(function*() {
     let result = yield request.get(url) // async function
     .then((body) => {
