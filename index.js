@@ -15,17 +15,13 @@ function recursion(array, index, fn){
 
 module.exports = function(array, fn){
   return co(function*() {
-
-    console.log('in function')
     if (!Array.isArray(array)) {
 
       return reject('co-forEachSeries accepts array as first argument!');
     }
-    console.log('pre 3');
     if(array.length < 1) {
       return resolve();
     }
-    console.log('pre recursion');
     yield recursion(array, 0, fn);
     return ;
   })
