@@ -1,0 +1,32 @@
+{
+  "name": "co-foreach-series",
+  "version": "1.0.0",
+  "description": "Foreach Series with ES6 generator co.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenqingyu/co-forEachSeries.git"
+  },
+  "keywords": [
+    "es6",
+    "foreach",
+    "seires",
+    "async",
+    "iterator",
+    "co",
+    "generator"
+  ],
+  "author": "Wenqing Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenqingyu/co-forEachSeries/issues"
+  },
+  "homepage": "https://github.com/wenqingyu/co-forEachSeries",
+  "dependencies": {
+    "co": "^4.6.0",
+    "es6-request": "^2.1.2"
+  }
+}
