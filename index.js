@@ -20,7 +20,7 @@ module.exports = function(array, fn){
       return reject('co-forEachSeries accepts array as first argument!');
     }
     if(array.length < 1) {
-      return resolve();
+      return ;
     }
     yield recursion(array, 0, fn);
     return ;
